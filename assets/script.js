@@ -1,14 +1,3 @@
-// function initGoogle() {
-//     var location = {
-//         lat: 32.7767,
-//         lng: -96.7970
-//     }
-//     var options = {
-//         center: location,
-//         zoom: 8
-//     }
-//     map = new google.maps.Map(document.getElementById("map"), options);
-// }
 
 let map;
 
@@ -47,3 +36,24 @@ window.initMap = initMap;
 // })
 
 // autocomplete.addListener("place_changed")
+
+// let sunriseSunset;
+
+// fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&callback=mycallback') {
+//     .then(response => response.json())
+//   .then(data => console.log(data));
+// }
+  
+// fetch ("https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=214556dfb689253a62f7c088b67992ee")
+
+const dogBtn = document.querySelector('.dogBtn');
+const dogImage = document.querySelector('.dogImage');
+dogBtn.addEventListener('click',()=>{
+  fetch('https://dog.ceo/api/breeds/image/random')
+    .then(result =>{
+    return result.json();
+  })
+  .then(picture=>{
+    dogImage.src = picture.message;
+  });
+});
