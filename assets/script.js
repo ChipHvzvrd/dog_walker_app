@@ -6,9 +6,6 @@ function initMap() {
     center: { lat: 32.7767, lng: -96.7970 },
     zoom: 11,
   });
-
-  
-
 }
 
 window.initMap = initMap;
@@ -18,10 +15,10 @@ const dogBtn = document.querySelector('.dogBtn');
 const dogImage = document.querySelector('.dogImage');
 dogBtn.addEventListener('click',()=>{
   fetch('https://dog.ceo/api/breeds/image/random')
-    .then(result =>{
+    .then(result => {
     return result.json();
   })
-  .then(picture=>{
+  .then(picture => {
     dogImage.src = picture.message;
   });
 });
@@ -32,7 +29,7 @@ const getData = () => {
     .then(data => data.json())
     .then((data) => console.log(data));
     // document.querySelector('#name').innerHTML = '<h1>'
-    
+
 };
 
 getData();
