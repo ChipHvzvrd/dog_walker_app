@@ -28,8 +28,6 @@ const getData = () => {
     fetch ("https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today")
     .then(data => data.json())
     .then((data) => console.log(data));
-    // document.querySelector('#name').innerHTML = '<h1>'
-
 };
 
 getData();
