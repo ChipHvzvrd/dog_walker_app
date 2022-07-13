@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/CSS/font.css">
+  <link rel="stylesheet" href="./assets/CSS/chrome.css">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Document</title>
 </head>
@@ -17,28 +17,61 @@
     <div class="columns is-mobile">
       <div class="column is-one-third-mobile has-text-left">
         </div>
-      <div class="column is-one-third-mobile has-text-centered">
-      <figure id ="logo" class="image is-64x64 is-inline-block">
-        <img src="./assets/images/dog-logo-3.png" alt="">
-      </figure>
-      </div>
-      <div class="column is-one-third-mobile has-text-right">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        </div>
+          <div class="column is-one-third-mobile has-text-centered">
+            <figure id ="logo" class="image is-64x64 is-inline-block">
+              <img src="./assets/images/dog-logo-3.png" alt="">
+            </figure>
+          </div>
+          <div class="column is-one-third-mobile has-text-right is-family-sans-serif">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io"></a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+            
+              <div id="navbarBasicExample" class="navbar-menu has-text-centered">
+                
+                <div class="navbar-start">
+                  <a href="./index.html" class="navbar-item">Home</a>
+                  <a class="navbar-item">Documentation</a>
+                  <a class="navbar-item">About Us</a>
+                  <a class="navbar-item">Puppies</a>
+                </div>
+              </div>
+            
+                <div class="navbar-end">
+                </div>
+              </div>
+            </nav>
     </div>
   </div>
-  <div class="container is-max-desktop has-background-white">
-    <div class="columns is-mobile">
+
+  <div class="container is-fluid has-background-primary">
+    <div class="columns">
       <div class="column">
-        <div class="box  has-background-primary">
-          </nav>
-        </div>
       </div>
     </div>
 </div>
+
+<div class="container is-fluid">
+  <div class="columns is-mobile">
+    <div class="column is-half-mobile is-one-third-desktop p-6">
+      <h1 class="is-family-sans-serif">Enter Location</h1>
+      <input class="input is-info" type="text" placeholder="Location...">
+    </div>
+    <div class="column is-half-mobile is-one-third-desktop p-6">
+      <h1 class="'is-family-sans-serif">Map</h1>
+      <figure class= "image is-256x256">
+      <img src="./assets/images/Dallas-Map-Feature.jpeg" alt="" srcset="">
+      </figure>
+    </div>
+  </div>
+</div>
+<script src="./assets/JS/script.js"></script>
+<script src="./assets/JS/bulma.js"></script>
 </body>
 </html>
