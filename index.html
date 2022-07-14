@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/images/dog-logo-title.png" type="image/png">
-  <link rel="stylesheet" href="./assets/CSS/font.css">
-  <link rel="stylesheet" href="./assets/CSS/chrome.css">
   <link rel="stylesheet" href="./assets/CSS/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>CoolPaws</title>
@@ -15,7 +13,7 @@
 <body>
   
   <div id="logoContainer" class="container is-max-desktop has-background-white">
-    <div class="columns is-mobile">
+    <div class="columns is-mobile is-vcentered">
       <div class="column is-one-third-mobile has-text-left">
         </div>
           <div class="column is-one-third-mobile has-text-centered">
@@ -59,42 +57,65 @@
     </div>
 </div>
 
-<div class="container is-fluid pb-6">
+<div class="container is-fluid mb-6">
   <div class="columns is-mobile">
-    <div class="column is-half-mobile is-one-third-desktop mb-6">
+    <div class="column is-one-third-mobile is-one-third-desktop mb-6">
       <h1 class="is-family-sans-serif">Enter Location</h1>
       <input class="input is-info" type="text" placeholder="Location...">
     </div>
-    <div class="column is-half-mobile is-one-third-desktop pb-6">
+    <div class="column is-one-third-mobile is-one-third-desktop mb-6">
+    </div>
+    <div class="column is-one-third-mobile is-one-third-desktop mb-6">
       <h1 class="'is-family-sans-serif">Map</h1>
-      <figure class= "image is-256x256">
-      <img src="./assets/images/Dallas-Map-Feature.jpeg" alt="" srcset="">
+      <figure class= "image is-rounded">
+      <img src="./assets/images/Dallas-Map-Feature.jpeg" alt="">
       </figure>
     </div>
   </div>
 </div>
 
-<div class="container is-fluid has-background-primary has-text-centered">
-  <div class="columns">
+<div class="container is-fluid has-background-primary has-text-centered mb-6">
+  <div class="columns is-mobile">
     <div class="column has-text-white">
       <h1 id="Documentation">Documentation</h1>
     </div>
   </div>
 </div>
 
-<div class="container is-fluid">
-  <div class="columns">
-    <div class="column has-text-black">
-      <div class="box">
+<div class="container">
+  <div class="columns is-max-mobile">
+    <div class="column">
+      <div class="box has-text-primary">
         <div class="content">
+      <h2 class="has-text-primary">How it works</h2>
+      <ul>  
+       <li> Input uput your location</li>
+       <li> Our service will provide sunset and sunrise times per your location.</li>
+        <li> You can now use this information to schedule the best time of day to walk your dog.</li>
+        <li> Leave us a follow <b>@CoolPaws&reg;</b></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box has-text-primary">
+        <div class="content">
+      <h2 class="has-text-primary">Why we do it</h2>
       <ul>  
        <li> If a dog's body temperature rises past <b>104°</b>, he's in serious danger. </li>
        <li>If the body temperature continues to rise above <b>106°</b>, heatstroke can occur. </li>
         <li>Walking your dog in the morning or evening when it's cooler reduces the risk of heatstroke and burning their paws on the pavement. </li>
-        <li>That's why our team at <strong>CoolPaws</strong> &reg; has developed an application to calculate the best time for you to walk your dog based on location and time of year.</li>
+        <li>That's why our team at <b>CoolPaws&reg;</b> has developed an application to calculate the best time for you to walk your dog based on location and time of year.</li>
       </ul>
       </div>
       </div>
+    </div>
+    <div class="column has-text-centered">
+      <div class="box">
+        <figure class="image is-inline-block">
+          <img id="pupPic" src="./assets/images/Heat-Pup-756.png" alt="" srcset="">
+        </figure>
+        </div>
     </div>
   </div>
 </div>
