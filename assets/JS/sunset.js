@@ -7,7 +7,7 @@ var latitude = {"lat":""};
 var longitude = {"lon":""};
 
 
-function geoLocation(){
+ function geoLocation(){
 
     fetch('https://api.geocodify.com/v2/geoparse?api_key=bca99c614f2eaac28187bce7c2898fb13856ddea&text='+inputValue.value+'&pages=5')
     .then((response) => {
@@ -21,7 +21,7 @@ function geoLocation(){
         console.log(data.response.results.places.focus.cities[0]);
       })
       .catch((error) => console.error("FETCH ERROR:", error))
-    }
+     }
 
 async function renderData(){
 
