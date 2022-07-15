@@ -43,7 +43,9 @@ async function renderData(){
  }
   
 
-
+function storeData(){
+    localStorage.setItem("{''}");
+}
 
 
 
